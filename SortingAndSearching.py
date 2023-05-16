@@ -23,6 +23,7 @@ class Searching:
                 high = mid - 1
         return -1
 
+#Sorting Algorithms
 class Sorting:
     def __init__(self, arr):
         self.arr = arr
