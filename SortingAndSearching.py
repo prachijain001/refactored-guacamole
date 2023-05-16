@@ -119,7 +119,7 @@ searching = Searching(arr)
 
 # Linear search
 key=int(input("Element to be searched:- "))
-print("Element found at index ",(searching.linear_search(key)))
+print("Element found at index:- ",(searching.linear_search(key)))
 
 # Binary search
 key=int(input("Element to be searched:- "))
@@ -128,25 +128,25 @@ print("Element found at index:- ",(searching.binary_search(key)))
 
 # Bubble sort
 sorting.bubble_sort()
-print("After Bubble Sort ")
+print("After Bubble Sort: ")
 sorting.display()
 
 # Selection sort
 sorting.selection_sort()
-print("After Selection Sort ")
+print("After Selection Sort: ")
 sorting.display()
 
 # Merge sort
 sorting.merge_sort()
-print("After Merge Sort")
+print("After Merge Sort: ")
 sorting.display()
 
 # Quick sort
 sorted_arr = sorting.quick_sort()
-print("After Quick Sort")
+print("After Quick Sort: ")
 print(sorted_arr)
 
 # Insertion sort
 sorting.insertion_sort()
-print("After Insertion Sort ")
+print("After Insertion Sort: ")
 sorting.display()
