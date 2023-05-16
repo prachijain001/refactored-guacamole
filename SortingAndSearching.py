@@ -28,57 +28,6 @@ class Sorting:
     def __init__(self, arr):
         self.arr = arr
 
-    # Bubble sort algorithm
-    def bubble_sort(self):
-        n = len(self.arr)
-        for i in range(n):
-            for j in range(n - i - 1):
-                if self.arr[j] > self.arr[j + 1]:
-                    self.arr[j], self.arr[j + 1] = self.arr[j + 1], self.arr[j]
-    
-    #SElection sort
-    def selection_sort(self):
-        n = len(self.arr)
-        for i in range(n):
-            min_idx = i
-            for j in range(i + 1, n):
-                if self.arr[j] < self.arr[min_idx]:
-                    min_idx = j
-            self.arr[i], self.arr[min_idx] = self.arr[min_idx], self.arr[i]
-
-    # Merge sort algorithm
-    def merge_sort(self, arr=None):
-        if arr is None:
-            arr = self.arr
-
-        if len(arr) > 1:
-            mid = len(arr) // 2
-            left_half = arr[:mid]
-            right_half = arr[mid:]
-
-            self.merge_sort(left_half)
-            self.merge_sort(right_half)
-
-            i = j = k = 0
-
-            while i < len(left_half) and j < len(right_half):
-                if left_half[i] < right_half[j]:
-                    arr[k] = left_half[i]
-                    i += 1
-                else:
-                    arr[k] = right_half[j]
-                    j += 1
-                k += 1
-
-            while i < len(left_half):
-                arr[k] = left_half[i]
-                i += 1
-                k += 1
-
-            while j < len(right_half):
-                arr[k] = right_half[j]
-                j += 1
-                k += 1
 
     # Quick sort algorithm
     def quick_sort(self, arr=None):
